@@ -1,30 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
-        id="com.example.hello"
+        id="com.simpleProdInc.calabashiOS"
         version="0.7.0">
 
-  <name>Hello</name>
+  <name>CalabashiOS</name>
 
   <engines>
     <engine name="cordova" version=">=3.4.0"/>
   </engines>
 
-  <asset src="www/hello.js" target="js/hello.js"/>
-
-  <js-module src="www/hello.js" name="hello">
-    <clobbers target="hello" />
+  
+   <js-module src="www/calabashiOS.js" name="calabashiOS">
+    <clobbers target="calabash" />
   </js-module>
 
   <platform name="ios">
     
     <config-file target="config.xml" parent="/widget">
-      <feature name="Hello">
-        <param name="ios-package" value="HWPHello" />
+      <feature name="CalabashiOSServer">
+        <param name="ios-package" value="CalabashiOSServer" />
       </feature>
     </config-file>
+    
+    <framework src="src/ios/Frameworks/Security.framework" />
+    <framework src="src/ios/Frameworks/CFNetwork.framework" />
+    <framework src="src/ios/Frameworks/calabash.framework" custom="true" />
+    
+    <header-file src="src/ios/CalabashiOSServer.h" />
+    <source-file src="src/ios/CalabashiOSServer.m"/>
 
-    <header-file src="src/ios/HWPHello.h" target-dir="HelloPlugin"/>
-    <source-file src="src/ios/HWPHello.m" target-dir="HelloPlugin"/>
   </platform>
 
 </plugin>
