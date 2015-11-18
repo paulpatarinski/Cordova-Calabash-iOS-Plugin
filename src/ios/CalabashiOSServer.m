@@ -5,7 +5,18 @@
 
 - (void)start:(CDVInvokedUrlCommand*)command
 {
-	[CalabashServer start];
+ 	CDVPluginResult* pluginResult = nil;
+
+	@try {
+	    [CalabashServer start];
+        pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
+	 }
+	 @catch (NSException * e) {
+	    NSLog(@"Exception: %@", e);
+        pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsString: e.reason];
+	 }
+   
+    [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
 }
 
 @end
