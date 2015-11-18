@@ -29,12 +29,11 @@
     <platform name="ios">
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="Calabash iOS" >
-               <param name="ios-package" value="CDVDevice"/>
+               <param name="ios-package" value="CalabashiOS"/>
             </feature>
         </config-file>
 
-       <header-file src="src/ios/CDVDevice.h" />
-       <source-file src="src/ios/CDVDevice.m" />
+       <source-file src="src/ios/CalabashiOS.m" />
 
         <js-module src="calabash-ios.js" name="calabash-ios">
             <runs />
