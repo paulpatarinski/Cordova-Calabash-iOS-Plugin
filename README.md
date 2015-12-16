@@ -12,11 +12,11 @@ Edit `www/js/index.js` and add the following code inside `onDeviceReady`
 ```js
 if(window.calabash){
     var success = function() {
-        alert("Calabash Server started");
+        console.log("Calabash Server started");
     }
 
     var failure = function() {
-        alert("Error starting Calabash Server");
+        console.log("Error starting Calabash Server");
     }
 
     calabash.start(success, failure);
