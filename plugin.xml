@@ -22,8 +22,8 @@
       </feature>
     </config-file>
     
-    <framework src="src/ios/Frameworks/Security.framework" />
-    <framework src="src/ios/Frameworks/CFNetwork.framework" />
+    <framework src="src/ios/Frameworks/Security.framework" weak="true" />
+    <framework src="src/ios/Frameworks/CFNetwork.framework" weak="true" />
     <framework src="src/ios/Frameworks/calabash.framework" custom="true" />
     
     <header-file src="src/ios/CalabashiOSServer.h" />
