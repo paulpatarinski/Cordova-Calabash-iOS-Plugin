@@ -14,7 +14,10 @@
   },
   "keywords": [
     "ecosystem:cordova",
-    "cordova-ios"
+    "cordova-ios",
+    "calabash",
+    "iOS",
+    "calabash iOS"
   ],
   "engines": [
     {
