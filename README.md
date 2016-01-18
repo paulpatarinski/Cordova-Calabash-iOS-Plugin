@@ -1,4 +1,4 @@
-[Calabash iOS](https://github.com/calabash/calabash-ios) in your Cordova apps.
+Test your Cordova based apps with [Calabash iOS](https://github.com/calabash/calabash-ios).
 
 #Usage
 Add to your project
