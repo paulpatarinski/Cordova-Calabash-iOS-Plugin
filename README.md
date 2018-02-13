@@ -4,7 +4,7 @@ Test your Cordova based apps with [Calabash iOS](https://github.com/calabash/cal
 Add the plugin to your project
 
 ```
-cordova plugin add https://github.com/paulpatarinski/Cordova-Calabash-iOS-Plugin
+cordova plugin add cordova-plugin-calabash-ios
 ```
 
 Edit `www/js/index.js` and add the following code inside `onDeviceReady`
