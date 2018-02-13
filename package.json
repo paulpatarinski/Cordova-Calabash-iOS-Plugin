@@ -1,6 +1,6 @@
 {
   "name": "calabash-ios",
-  "version": "0.21.2",
+  "version": "0.21.3",
   "description": "Cordova plugin for adding Calabash iOS to your app",
   "cordova": {
     "id": "cordova-plugin-calabash-ios",
